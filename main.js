@@ -9,4 +9,6 @@ function showImage() {
     image.title = "Sleepy Puppy";
     image.alt = "A small fluffy beige puppy sleeping on a couch.";
     document.body.appendChild(image);
+
+    // same as <img src="sleepy_puppy.JPG" ... />
 };
