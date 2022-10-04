@@ -10,16 +10,15 @@ window.addEventListener("load", function() {
 
 function makeCodeMirror() {
     var myTextArea = document.querySelector("textarea#codemirror-textarea-1");
-    var myCodeEditor = document.querySelector("#code-editor-container-1");
-
-    console.log(myCodeEditor);
-
-    myCodeEditor.style = "left: 100px; top: 400px;"
-
     var myCodeMirror = CodeMirror.fromTextArea(myTextArea, {
         mode: "javascript",
         lineNumbers: true,
     });
+
+    var myCodeEditorContainer = document.querySelector("#code-editor-container-1");
+    myCodeEditorContainer.style = "left: 100px; top: 400px;"
+
+    console.log(myCodeEditorContainer);
 }
 
 function demonstrateMouseEvents() {
